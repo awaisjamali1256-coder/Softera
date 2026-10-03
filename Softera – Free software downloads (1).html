@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2312A150'/%3E%3Cpath d='M21.5 10C21 8 19 7 16 7C13 7 11 8.500 11 10.500C11 12.700 13 13.500 16 14.300C19 15.100 21 15.900 21 18.300C21 20.400 19 21.700 16 21.700C13 21.700 11 20.500 10.500 18.500' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Crect x='10' y='25' width='12' height='2.600' rx='1.300' fill='%23FBBF24'/%3E%3C/svg%3E">
+<title>Softera – Free software downloads for Windows, Mac and Android</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F7F9;--sf:#fff;--ink:#16222E;--mute:#617080;--line:#E1E7ED;--g:#12A150;--gd:#0D8541;--gs:#E6F6EC;--star:#F5A623;--ft:#16222E;--onft:#C9D4DE;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1720;--sf:#17212C;--ink:#E8EEF4;--mute:#97A6B5;--line:#263443;--g:#2FC373;--gd:#25A862;--gs:#12301F;--ft:#0A1118;--onft:#97A6B5}}
+:root[data-theme="dark"]{--bg:#0F1720;--sf:#17212C;--ink:#E8EEF4;--mute:#97A6B5;--line:#263443;--g:#2FC373;--gd:#25A862;--gs:#12301F;--ft:#0A1118;--onft:#97A6B5}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.55 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+h1,h2,h3{margin:0;letter-spacing:-.015em}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--g);outline-offset:2px}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+.top{background:var(--sf);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.bar{display:flex;align-items:center;gap:24px;height:64px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:22px;cursor:pointer;color:var(--ink)}
+.logo i{width:28px;height:28px;border-radius:8px;background:var(--g);display:grid;place-items:center;color:#fff;font:800 16px sans-serif;font-style:normal}
+.nav{display:flex;gap:4px;margin-left:8px;flex:1}
+.nav button{background:none;border:0;padding:8px 14px;border-radius:8px;font-weight:600;font-size:14px;color:var(--mute);cursor:pointer}
+.nav button:hover{background:var(--bg)}.nav button.on{color:var(--g);background:var(--gs)}
+.th{border:1px solid var(--line);background:var(--sf);color:var(--ink);border-radius:8px;padding:7px 12px;font-size:13px;font-weight:600;cursor:pointer}
+@media(max-width:640px){.nav{display:none}.bar{justify-content:space-between}}
+.hero{background:var(--sf);border-bottom:1px solid var(--line);padding:48px 0 40px;text-align:center}
+.hero h1{font-size:clamp(28px,5vw,44px);font-weight:800;line-height:1.12}
+.hero p{color:var(--mute);margin:10px auto 24px;max-width:36em}
+.sb{display:flex;max-width:640px;margin:0 auto;border:2px solid var(--line);border-radius:12px;overflow:hidden;background:var(--sf)}
+.sb:focus-within{border-color:var(--g)}
+.sb input{flex:1;min-width:0;border:0;background:none;color:var(--ink);font:inherit;font-size:16px;padding:14px 16px}
+.sb input:focus{outline:none}
+.sb button{border:0;background:var(--g);color:#fff;font-weight:700;font-size:15px;padding:0 26px;cursor:pointer}
+.sb button:hover{background:var(--gd)}
+.pop{margin-top:14px;font-size:13px;color:var(--mute)}
+.pop a{color:var(--g);font-weight:600;margin:0 6px;cursor:pointer}
+.sec{padding:32px 0 0}
+.sh{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.sh h2{font-size:21px;font-weight:800}.sh span{color:var(--mute);font-size:13px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--sf);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.card:hover{border-color:var(--g)}
+.hd{display:flex;gap:12px;align-items:center;cursor:pointer}
+.ic{flex:none;width:52px;height:52px;border-radius:13px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:23px}
+.ic.l{width:96px;height:96px;border-radius:22px;font-size:44px}
+.card h3{font-size:16px;font-weight:700;line-height:1.25}
+.sub{color:var(--mute);font-size:12.5px}
+.st{color:var(--star);letter-spacing:1px;font-size:13px}.st b{color:var(--mute);letter-spacing:0;font-weight:600;margin-left:4px}
+.card p{margin:0;color:var(--mute);font-size:13.5px;flex:1}
+.btn{border:0;background:var(--g);color:#fff;font-weight:700;font-size:14px;border-radius:9px;padding:10px 16px;cursor:pointer;text-align:center}
+.btn:hover{background:var(--gd)}
+.cat{background:var(--sf);border:1px solid var(--line);border-radius:14px;padding:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;color:var(--ink)}
+.cat:hover{border-color:var(--g)}
+.cat b{display:block;font-size:15px}.cat small{color:var(--mute)}
+.mi{display:flex}.mi .ic{width:30px;height:30px;font-size:13px;border-radius:8px;border:2px solid var(--sf);margin-left:-8px}
+.tb{background:var(--sf);border:1px solid var(--line);border-radius:14px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th{text-align:left;font-size:12.5px;color:var(--mute);font-weight:600;padding:12px 16px;border-bottom:1px solid var(--line)}
+td{padding:12px 16px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:middle}
+tr:last-child td{border-bottom:0}
+td .ic{width:36px;height:36px;font-size:16px;border-radius:9px}
+.nm{display:flex;gap:12px;align-items:center;font-weight:700;cursor:pointer}
+.badge{background:var(--gs);color:var(--g);font-weight:700;font-size:12px;border-radius:99px;padding:2px 9px}
+.det{display:grid;gap:24px;padding-top:28px}
+@media(min-width:860px){.det{grid-template-columns:1fr 320px}}
+.pan{background:var(--sf);border:1px solid var(--line);border-radius:14px;padding:22px}
+.pan h2{font-size:18px;margin-bottom:10px}
+.dh{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.dh h1{font-size:28px;font-weight:800}
+.crumb{font-size:13px;color:var(--mute);padding-top:20px}.crumb a{color:var(--g);font-weight:600;cursor:pointer}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0 16px}
+dt,dd{margin:0;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}dt{color:var(--mute)}dd{text-align:right;font-weight:600}
+.empty{padding:36px;text-align:center;color:var(--mute);background:var(--sf);border:1px dashed var(--line);border-radius:14px}
+.trust{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;padding:22px 0;color:var(--mute);font-size:13px;font-weight:600}
+.trust span:before{content:"✓ ";color:var(--g)}
+footer{background:var(--ft);color:var(--onft);margin-top:48px;padding:40px 0 24px;font-size:14px}
+.fg{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+footer h4{color:#fff;margin:0 0 10px;font-size:14px}footer li{list-style:none;padding:3px 0}footer ul{margin:0;padding:0}
+footer .c{border-top:1px solid #ffffff22;margin-top:28px;padding-top:16px;font-size:12.5px}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s;max-width:90%;z-index:9}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){#toast{transition:none}}
+.ic svg{display:block}a.btn{display:block}td .btn{display:inline-block}
+.sbw{position:relative;max-width:640px;margin:0 auto;text-align:left}
+.sg{position:absolute;left:0;right:0;top:calc(100% + 6px);background:var(--sf);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px #0003;z-index:6;overflow:hidden}
+.sg[hidden]{display:none}.sg a{display:flex;gap:12px;align-items:center;padding:8px 12px;cursor:pointer}
+.sg a:hover{background:var(--bg)}.sg .ic{width:34px;height:34px;border-radius:9px}.sg small{display:block;color:var(--mute);font-size:12px}
+.more{display:block;margin:16px auto 0;background:var(--sf);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:10px 22px;font-weight:700;cursor:pointer}
+.ic{position:relative;overflow:hidden}.ic img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:16%}
+.logo svg{flex:none}.wm{letter-spacing:-.03em;font-size:24px}
+</style>
+</head>
+<body>
+<div class="top"><div class="w bar">
+<a class="logo" onclick="go({})" tabindex="0"><svg viewBox="0 0 32 32" width="36" height="36" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22C55E"/><stop offset="1" stop-color="#0B7A3E"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M21.5 10C21 8 19 7 16 7C13 7 11 8.5 11 10.5C11 12.7 13 13.5 16 14.3C19 15.1 21 15.9 21 18.3C21 20.4 19 21.7 16 21.7C13 21.7 11 20.5 10.5 18.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><rect x="10" y="25" width="12" height="2.6" rx="1.3" fill="#FBBF24"/></svg><span class="wm">Softera</span></a>
+<div class="nav" id="nav"></div>
+<button class="th" id="th" aria-label="Toggle dark mode">Dark mode</button>
+</div></div>
+<div class="hero"><div class="w">
+<h1>Download free software you can trust</h1>
+<p>Browse popular programs for Windows, Mac and Android. Every page shows the license and links to the official download.</p>
+<div class="sbw"><div class="sb" role="search"><input id="q" type="search" placeholder="Search for software, e.g. video player" aria-label="Search software" autocomplete="off"><button id="sbtn">Search</button></div><div id="sg" class="sg" hidden></div></div>
+<div class="pop">Popular: <a data-q="player">Player</a><a data-q="browser">Browser</a><a data-q="pdf">PDF</a><a data-q="antivirus">Antivirus</a></div>
+</div></div>
+<div class="w"><div class="trust"><span>Links to official websites</span><span>License shown on every listing</span><span>Search every program by name</span></div></div>
+<main class="w" id="main"></main>
+<footer><div class="w"><div class="fg">
+<div><h4>Softera</h4><p>A software directory for people who want clear, honest download pages.</p></div>
+<div><h4>Platforms</h4><ul><li>Windows</li><li>Mac</li><li>Android</li></ul></div>
+<div><h4>Company</h4><ul><li>About us</li><li>Contact</li><li>Submit software</li></ul></div>
+<div><h4>Legal</h4><ul><li>Privacy policy</li><li>Terms of use</li><li>Cookie settings</li></ul></div>
+</div><div class="c">© 2026 Softera. Program names belong to their respective owners. Download buttons open each program's official website.</div></div></footer>
+<div id="toast" role="status"></div>
+<script>
+const D=`Google Chrome|B|Free|WMA|www.google.com/chrome/|Fast web browser from Google
+Mozilla Firefox|B|Open source|WMA|www.mozilla.org/firefox/|Private, customizable web browser
+Microsoft Edge|B|Free|WMA|www.microsoft.com/edge|Built-in browser for Windows
+Opera|B|Free|WMA|www.opera.com/|Browser with built-in VPN and sidebar
+Brave|B|Open source|WMA|brave.com/|Browser that blocks ads and trackers
+VLC Media Player|M|Open source|WMA|www.videolan.org/vlc/|Plays almost any video or audio file
+Kodi|M|Open source|WMA|kodi.tv/|Home theater and media center
+Spotify|M|Freemium|WMA|www.spotify.com/download/|Stream music and podcasts
+Foobar2000|M|Free|W|www.foobar2000.org/|Light and flexible audio player
+Winamp|M|Free|W|www.winamp.com/|Classic music player
+HandBrake|M|Open source|WM|handbrake.fr/|Convert video to any format
+OBS Studio|M|Open source|WM|obsproject.com/|Record and stream your screen
+Audacity|M|Open source|WM|www.audacityteam.org/|Record and edit audio
+DaVinci Resolve|M|Freemium|WM|www.blackmagicdesign.com/products/davinciresolve|Professional video editing
+Shotcut|M|Open source|WM|shotcut.org/|Free video editor
+Camtasia|M|Trial|WM|www.techsmith.com/camtasia/|Screen recorder and video editor
+GIMP|G|Open source|WM|www.gimp.org/|Photo editor and image painter
+Paint.NET|G|Free|W|www.getpaint.net/|Easy image and photo editing
+Krita|G|Open source|WM|krita.org/|Digital painting and illustration
+Inkscape|G|Open source|WM|inkscape.org/|Vector graphics editor
+Blender|G|Open source|WM|www.blender.org/download/|3D modeling and animation
+ShareX|G|Open source|W|getsharex.com/|Screenshots and screen capture
+Greenshot|G|Open source|W|getgreenshot.org/|Quick screenshot tool
+Malwarebytes|S|Freemium|WMA|www.malwarebytes.com/|Finds and removes malware
+Avast Free Antivirus|S|Freemium|WMA|www.avast.com/|Free antivirus protection
+AVG AntiVirus Free|S|Freemium|WMA|www.avg.com/|Free antivirus and scanner
+Bitdefender|S|Trial|WMA|www.bitdefender.com/|Antivirus and internet security
+Kaspersky|S|Trial|WMA|www.kaspersky.com/|Antivirus and online protection
+Wireshark|S|Open source|WM|www.wireshark.org/|Network traffic analyzer
+CCleaner|T|Freemium|WMA|www.ccleaner.com/|Clean junk files and speed up your PC
+Revo Uninstaller|T|Freemium|WA|www.revouninstaller.com/|Remove programs completely
+Everything|T|Free|W|www.voidtools.com/|Instant file search for Windows
+CPU-Z|T|Free|WA|www.cpuid.com/softwares/cpu-z.html|Shows details of your hardware
+Rufus|T|Open source|W|rufus.ie/|Create bootable USB drives
+VirtualBox|T|Open source|WM|www.virtualbox.org/|Run other operating systems in a window
+BlueStacks|T|Free|WM|www.bluestacks.com/|Run Android apps on your PC
+TeamViewer|T|Freemium|WMA|www.teamviewer.com/|Remote access and support
+AnyDesk|T|Freemium|WMA|anydesk.com/|Fast remote desktop software
+LibreOffice|O|Open source|WM|www.libreoffice.org/download/|Free Word, Excel and PowerPoint alternative
+Adobe Acrobat Reader|O|Free|WMA|get.adobe.com/reader/|View, print and comment on PDFs
+Foxit PDF Reader|O|Freemium|WMA|www.foxit.com/pdf-reader/|Lightweight PDF reader
+SumatraPDF|O|Open source|W|www.sumatrapdfreader.org/|Fast, simple PDF reader
+Notion|O|Freemium|WMA|www.notion.so/|Notes, docs and projects in one place
+Evernote|O|Freemium|WMA|evernote.com/|Notes and web clippings
+Thunderbird|O|Open source|WM|www.thunderbird.net/|Free email client
+Dropbox|O|Freemium|WMA|www.dropbox.com/install|Cloud storage and file sync
+Google Drive|O|Freemium|WMA|www.google.com/drive/download/|Cloud storage from Google
+Visual Studio Code|D|Free|WM|code.visualstudio.com/|Popular code editor
+Notepad++|D|Open source|W|notepad-plus-plus.org/|Text and code editor
+Sublime Text|D|Trial|WM|www.sublimetext.com/|Fast, sleek code editor
+PyCharm|D|Freemium|WM|www.jetbrains.com/pycharm/|Python IDE
+Python|D|Open source|WM|www.python.org/downloads/|Python programming language
+Node.js|D|Open source|WM|nodejs.org/|JavaScript runtime
+Git|D|Open source|WM|git-scm.com/|Version control system
+Postman|D|Freemium|WM|www.postman.com/downloads/|Build and test APIs
+Android Studio|D|Free|WM|developer.android.com/studio|Official Android app IDE
+Java|D|Free|WM|www.java.com/|Run Java applications
+Zoom|C|Freemium|WMA|zoom.us/download|Video meetings and webinars
+Discord|C|Free|WMA|discord.com/download|Voice, video and text chat
+Telegram Desktop|C|Free|WMA|desktop.telegram.org/|Fast and secure messaging
+WhatsApp|C|Free|WMA|www.whatsapp.com/download|Messaging and calls on your PC
+Skype|C|Free|WMA|www.skype.com/|Video calls and messages
+Slack|C|Freemium|WMA|slack.com/downloads|Team chat and collaboration
+Microsoft Teams|C|Freemium|WMA|www.microsoft.com/microsoft-teams/download-app|Meetings, chat and files
+7-Zip|F|Open source|W|www.7-zip.org/|Free file archiver
+WinRAR|F|Trial|WA|www.win-rar.com/|Create and open RAR and ZIP files
+Bandizip|F|Freemium|WM|www.bandisoft.com/bandizip/|Fast file archiver
+qBittorrent|F|Open source|WM|www.qbittorrent.org/|Open source torrent client
+Internet Download Manager|F|Trial|W|www.internetdownloadmanager.com/|Speed up and schedule downloads
+Free Download Manager|F|Free|WMA|www.freedownloadmanager.org/|Download manager and accelerator
+FileZilla|F|Open source|WM|filezilla-project.org/|FTP and SFTP client
+WinSCP|F|Open source|W|winscp.net/|SFTP and file transfer client
+Steam|P|Free|WM|store.steampowered.com/about/|Game store and library
+Epic Games Launcher|P|Free|WM|store.epicgames.com/|Game store and free weekly games
+Adobe Photoshop|G|Paid|WM|www.adobe.com/products/photoshop.html|Industry-standard photo editor
+Adobe Premiere Pro|M|Paid|WM|www.adobe.com/products/premiere.html|Professional video editing
+Adobe Illustrator|G|Paid|WM|www.adobe.com/products/illustrator.html|Vector graphics and logo design
+Canva|G|Freemium|WMA|www.canva.com/download/|Easy graphic design
+Figma|G|Freemium|WM|www.figma.com/downloads/|Interface design and prototyping
+iTunes|M|Free|W|www.apple.com/itunes/|Music, movies and device sync
+MusicBee|M|Free|W|getmusicbee.com/|Music manager and player
+Microsoft 365|O|Paid|WMA|www.microsoft.com/microsoft-365|Word, Excel and PowerPoint
+WPS Office|O|Freemium|WMA|www.wps.com/|Office suite for documents
+Apache OpenOffice|O|Open source|WM|www.openoffice.org/|Free office suite
+Obsidian|O|Free|WMA|obsidian.md/|Linked notes in plain files
+Calibre|O|Open source|WM|calibre-ebook.com/|E-book reader and converter
+Zotero|O|Open source|WM|www.zotero.org/|Collect and cite research
+Visual Studio|D|Freemium|W|visualstudio.microsoft.com/|Full IDE for .NET and C++
+IntelliJ IDEA|D|Freemium|WM|www.jetbrains.com/idea/|Java and Kotlin IDE
+Eclipse|D|Open source|WM|www.eclipse.org/downloads/|Java IDE
+Docker Desktop|D|Freemium|WM|www.docker.com/products/docker-desktop/|Run apps in containers
+Anaconda|D|Freemium|WM|www.anaconda.com/download|Python for data science
+GitHub Desktop|D|Free|WM|desktop.github.com/|Git made simple
+XAMPP|D|Open source|WM|www.apachefriends.org/|Local web server stack
+Unity Hub|D|Freemium|WM|unity.com/download|Game development engine
+PuTTY|D|Open source|W|www.chiark.greenend.org.uk/~sgtatham/putty/|SSH and telnet client
+Nmap|S|Open source|WM|nmap.org/|Network scanner
+Norton 360|S|Trial|WMA|us.norton.com/|Antivirus and identity protection
+McAfee Total Protection|S|Trial|WMA|www.mcafee.com/|Antivirus and web protection
+ESET NOD32|S|Trial|WMA|www.eset.com/|Lightweight antivirus
+Avira|S|Freemium|WMA|www.avira.com/|Free antivirus and VPN
+Bitwarden|S|Freemium|WMA|bitwarden.com/|Open source password manager
+KeePass|S|Open source|W|keepass.info/|Offline password manager
+ProtonVPN|S|Freemium|WMA|protonvpn.com/|Private, no-ads VPN
+NordVPN|S|Paid|WMA|nordvpn.com/|Fast, secure VPN
+HWiNFO|T|Free|W|www.hwinfo.com/|Detailed hardware information
+MSI Afterburner|T|Free|W|www.msi.com/Landing/afterburner|GPU overclocking and monitoring
+Recuva|T|Freemium|W|www.ccleaner.com/recuva|Recover deleted files
+Ventoy|T|Open source|W|www.ventoy.net/|Boot many ISO files from one USB
+Balena Etcher|T|Open source|WM|etcher.balena.io/|Flash images to USB drives
+uTorrent|F|Freemium|WM|www.utorrent.com/|Lightweight torrent client
+Viber|C|Free|WMA|www.viber.com/|Free calls and messages
+Signal|C|Free|WMA|signal.org/|Private messaging
+GOG Galaxy|P|Free|WM|www.gog.com/galaxy|DRM-free game library
+EA app|P|Free|W|www.ea.com/ea-app|EA games launcher
+Battle.net|P|Free|WM|battle.net/download|Blizzard game launcher
+Ubisoft Connect|P|Free|W|ubisoftconnect.com/|Ubisoft game launcher
+Vivaldi|B|Free|WMA|vivaldi.com/|Customizable browser with built-in tools
+Tor Browser|B|Open source|WMA|www.torproject.org/download/|Browse with extra privacy
+Waterfox|B|Open source|WM|www.waterfox.net/|Privacy-focused Firefox-based browser
+DuckDuckGo Browser|B|Free|WMA|duckduckgo.com/app|Private browser with tracker blocking
+mpv|M|Open source|WM|mpv.io/|Minimal, powerful video player
+Jellyfin|M|Open source|WMA|jellyfin.org/|Your own media server
+Plex Media Server|M|Freemium|WM|www.plex.tv/media-server-downloads/|Organize and stream your media
+AIMP|M|Free|W|www.aimp.ru/|Music player with equalizer
+MediaMonkey|M|Freemium|W|www.mediamonkey.com/|Manage large music libraries
+Streamlabs Desktop|M|Freemium|W|streamlabs.com/streamlabs-desktop|Live streaming software
+Kdenlive|M|Open source|WM|kdenlive.org/|Multi-track video editor
+OpenShot|M|Open source|WM|www.openshot.org/|Easy video editor
+MKVToolNix|M|Open source|WM|mkvtoolnix.download/|Edit and merge MKV files
+LMMS|M|Open source|WM|lmms.io/|Make music on your PC
+Ardour|M|Open source|WM|ardour.org/|Record and mix audio
+REAPER|M|Trial|WM|www.reaper.fm/|Digital audio workstation
+Affinity Photo|G|Paid|WM|affinity.serif.com/photo/|Professional photo editing
+Darktable|G|Open source|WM|www.darktable.org/|RAW photo workflow
+RawTherapee|G|Open source|WM|www.rawtherapee.com/|RAW photo processor
+IrfanView|G|Free|W|www.irfanview.com/|Fast image viewer
+XnView MP|G|Free|WM|www.xnview.com/|Image viewer and converter
+FastStone Image Viewer|G|Free|W|www.faststone.org/|Browse and edit images
+SketchUp|G|Freemium|WM|www.sketchup.com/|Easy 3D modeling
+AutoCAD|G|Trial|WM|www.autodesk.com/products/autocad/overview|2D and 3D CAD drawing
+Fusion 360|G|Freemium|WM|www.autodesk.com/products/fusion-360/overview|3D design and engineering
+FreeCAD|G|Open source|WM|www.freecad.org/|Parametric 3D modeler
+Scribus|G|Open source|WM|www.scribus.net/|Page layout and desktop publishing
+Sophos Home|S|Freemium|WM|home.sophos.com/|Antivirus for home
+Trend Micro|S|Trial|WM|www.trendmicro.com/|Antivirus and web protection
+VeraCrypt|S|Open source|WM|veracrypt.fr/|Encrypt drives and files
+Cryptomator|S|Open source|WMA|cryptomator.org/|Encrypt your cloud files
+Surfshark|S|Paid|WMA|surfshark.com/|VPN for unlimited devices
+ExpressVPN|S|Paid|WMA|www.expressvpn.com/|Fast VPN service
+Mullvad VPN|S|Paid|WMA|mullvad.net/|Privacy-first VPN
+Windscribe|S|Freemium|WMA|windscribe.com/|VPN with a free plan
+TunnelBear|S|Freemium|WMA|www.tunnelbear.com/|Simple VPN
+WireGuard|S|Open source|WMA|www.wireguard.com/|Fast, modern VPN protocol
+OpenVPN|S|Open source|WMA|openvpn.net/|Open source VPN client
+1Password|S|Paid|WMA|1password.com/|Password manager
+LastPass|S|Freemium|WMA|www.lastpass.com/|Password manager and vault
+Speccy|T|Freemium|W|www.ccleaner.com/speccy|View your PC specifications
+Defraggler|T|Freemium|W|www.ccleaner.com/defraggler|Defragment your hard drive
+Glary Utilities|T|Freemium|W|www.glarysoft.com/glary-utilities/|All-in-one PC maintenance
+Wise Care 365|T|Freemium|W|www.wisecleaner.com/|PC cleaner and optimizer
+Process Explorer|T|Free|W|learn.microsoft.com/sysinternals/downloads/process-explorer|Advanced task manager
+PowerToys|T|Open source|W|learn.microsoft.com/windows/powertoys/|Extra tools for Windows
+CrystalDiskInfo|T|Open source|W|crystalmark.info/en/software/crystaldiskinfo/|Check your drive health
+CrystalDiskMark|T|Open source|W|crystalmark.info/en/software/crystaldiskmark/|Test disk speed
+Cinebench|T|Free|WM|www.maxon.net/en/cinebench|CPU and GPU benchmark
+GPU-Z|T|Free|W|www.techpowerup.com/gpuz/|Graphics card information
+Core Temp|T|Free|W|www.alcpu.com/CoreTemp/|Monitor CPU temperature
+WinDirStat|T|Open source|W|windirstat.net/|See what is using disk space
+Rainmeter|T|Open source|W|www.rainmeter.net/|Desktop widgets and skins
+f.lux|T|Free|WM|justgetflux.com/|Warmer screen at night
+AutoHotkey|T|Open source|W|www.autohotkey.com/|Automate with scripts and hotkeys
+NVIDIA App|T|Free|W|www.nvidia.com/en-us/software/nvidia-app/|Drivers and GPU settings
+AMD Software|T|Free|W|www.amd.com/en/support/download/drivers.html|Radeon drivers and settings
+Joplin|O|Open source|WMA|joplinapp.org/|Notes with sync
+Typora|O|Paid|WM|typora.io/|Clean Markdown editor
+Todoist|O|Freemium|WMA|todoist.com/|To-do lists and tasks
+OneDrive|O|Freemium|WMA|www.microsoft.com/microsoft-365/onedrive/download|Microsoft cloud storage
+MEGA|O|Freemium|WMA|mega.io/desktop|Encrypted cloud storage
+Nextcloud|O|Open source|WMA|nextcloud.com/install/|Your own file sync server
+Syncthing|O|Open source|WM|syncthing.net/|Sync files between devices
+PDFgear|O|Free|WM|www.pdfgear.com/|Free PDF editor and converter
+Xmind|O|Freemium|WM|xmind.app/|Mind mapping
+eM Client|O|Freemium|WM|www.emclient.com/|Email, calendar and tasks
+Vim|D|Open source|WM|www.vim.org/|Powerful text editor
+Neovim|D|Open source|WM|neovim.io/|Modern Vim editor
+WebStorm|D|Freemium|WM|www.jetbrains.com/webstorm/|JavaScript IDE
+Cursor|D|Freemium|WM|cursor.com/|AI code editor
+Insomnia|D|Freemium|WM|insomnia.rest/|API client
+DBeaver|D|Open source|WM|dbeaver.io/|Database manager
+PostgreSQL|D|Open source|WM|www.postgresql.org/download/|Open source database
+MySQL Workbench|D|Free|WM|dev.mysql.com/downloads/workbench/|MySQL design and admin
+HeidiSQL|D|Open source|W|www.heidisql.com/|Manage MySQL and other databases
+Go|D|Open source|WM|go.dev/dl/|Go programming language
+Rust|D|Open source|WM|www.rust-lang.org/tools/install|Rust programming language
+PHP|D|Open source|W|www.php.net/downloads|PHP scripting language
+.NET SDK|D|Open source|WM|dotnet.microsoft.com/download|Build .NET apps
+Flutter|D|Open source|WM|flutter.dev/|Build apps for any screen
+Godot Engine|D|Open source|WM|godotengine.org/download|Game engine
+Unreal Engine|D|Freemium|WM|www.unrealengine.com/download|3D game engine
+MobaXterm|D|Freemium|W|mobaxterm.mobatek.net/|SSH and remote tools
+SourceTree|D|Free|WM|www.sourcetreeapp.com/|Visual Git client
+WinMerge|D|Open source|W|winmerge.org/|Compare files and folders
+Beyond Compare|D|Trial|WM|www.scootersoftware.com/|Compare files and folders
+Element|C|Open source|WMA|element.io/download|Secure team messaging
+LINE|C|Free|WMA|line.me/en/download|Messages and calls
+WeChat|C|Free|WM|www.wechat.com/|Chat and payments
+Webex|C|Freemium|WMA|www.webex.com/downloads.html|Video meetings
+TeamSpeak|C|Freemium|WM|www.teamspeak.com/en/downloads/|Voice chat for gamers
+Jitsi Meet|C|Open source|WMA|jitsi.org/downloads/|Free video meetings
+Total Commander|F|Trial|W|www.ghisler.com/|Classic dual-pane file manager
+Double Commander|F|Open source|WM|doublecmd.sourceforge.io/|Dual-pane file manager
+TeraCopy|F|Freemium|W|www.codesector.com/teracopy|Faster, safer file copying
+PeaZip|F|Open source|WM|peazip.github.io/|Free archive manager
+WinZip|F|Trial|WM|www.winzip.com/|Zip and unzip files
+Transmission|F|Open source|WM|transmissionbt.com/|Light torrent client
+Deluge|F|Open source|WM|deluge-torrent.org/|Torrent client with plugins
+JDownloader|F|Free|WM|jdownloader.org/|Automatic download manager
+Cyberduck|F|Open source|WM|cyberduck.io/|FTP, SFTP and cloud browser
+Roblox|P|Free|WM|www.roblox.com/download|Play and create games
+League of Legends|P|Free|WM|www.leagueoflegends.com/en-us/download/|Popular team strategy game
+Minecraft Launcher|P|Paid|WM|www.minecraft.net/download|Launch Minecraft Java and Bedrock
+itch.io app|P|Free|WM|itch.io/app|Indie game library
+Playnite|P|Open source|W|playnite.link/|One library for all your games
+Heroic Games Launcher|P|Open source|WM|heroicgameslauncher.com/|Epic, GOG and Amazon games
+RetroArch|P|Open source|WM|www.retroarch.com/|Retro game emulator frontend
+Dolphin Emulator|P|Open source|WM|dolphin-emu.org/|GameCube and Wii emulator
+PCSX2|P|Open source|WM|pcsx2.net/|PlayStation 2 emulator`;
+const CN={B:"Browsers",M:"Media",G:"Graphics & Design",S:"Security",T:"System Tools",O:"Productivity",D:"Developer Tools",C:"Communication",F:"Files & Downloads",P:"Games"};
+const ON={W:"Windows",M:"Mac",A:"Android"};
+const A=D.trim().split("\n").map(l=>{const[n,c,lic,os,u,d]=l.split("|");return{n,c:CN[c],lic,os:[...os].map(x=>ON[x]),u,d}});
+const GL={"Browsers":'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
+"Media":'<circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5z"/>',
+"Graphics & Design":'<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="M4 18l5-5 4 4 3-3 4 4"/>',
+"Security":'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
+"System Tools":'<path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/>',
+"Productivity":'<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>',
+"Developer Tools":'<path d="M9 8l-4 4 4 4M15 8l4 4-4 4M13 6l-2 12"/>',
+"Communication":'<path d="M4 5h16v11H9l-5 4z"/>',
+"Files & Downloads":'<path d="M12 4v11M7 11l5 5 5-5M5 20h14"/>',
+"Games":'<path d="M7 8h10a4 4 0 014 4v2a3 3 0 01-5 2l-1-2H9l-1 2a3 3 0 01-5-2v-2a4 4 0 014-4z"/><path d="M8 11v3M6.5 12.5h3"/>'};
+const cats=Object.values(CN),$=i=>document.getElementById(i);
+let S={os:"All",q:"",cat:"",app:"",n:20};
+const hue=s=>{let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))%360;return h};
+const ic=(a,l)=>{const h=hue(a.n);return`<div class="ic ${l?"l":""}" style="background:linear-gradient(145deg,hsl(${h},62%,48%),hsl(${(h+25)%360},62%,36%))" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="55%" height="55%">${GL[a.c]}</svg><img src="https://www.google.com/s2/favicons?domain=${a.u.split("/")[0].replace(/^www\./,"")}&sz=128" alt="" loading="lazy" onerror="this.remove()"></div>`};
+const lb=a=>`<span class="badge">${a.lic}</span>`;
+const dl=(a,x="")=>`<a class="btn" ${x} href="https://${a.u}" target="_blank" rel="noopener noreferrer" aria-label="Download ${a.n} from its official website">Download</a>`;
+const card=a=>`<article class="card"><div class="hd" data-app="${a.n}">${ic(a)}<div><h3>${a.n}</h3><div class="sub">${a.c}</div></div></div><div>${lb(a)} <span class="sub">${a.os.join(" · ")}</span></div><p>${a.d}.</p>${dl(a)}</article>`;
+function go(o){S={os:S.os,q:"",cat:"",app:"",n:20,...o};$("q").value=o.q!==undefined?o.q:"";$("sg").hidden=true;render();scrollTo({top:0})}
+const pool=()=>A.filter(a=>(S.os==="All"||a.os.includes(S.os))&&(!S.cat||a.c===S.cat)&&(a.n+" "+a.d+" "+a.c).toLowerCase().includes(S.q.toLowerCase()));
+function render(){
+ $("nav").innerHTML=["All","Windows","Mac","Android"].map(o=>`<button class="${S.os===o?"on":""}" data-os="${o}">${o==="All"?"All platforms":o}</button>`).join("");
+ const m=$("main");
+ if(S.app){const a=A.find(x=>x.n===S.app),sim=A.filter(x=>x.c===a.c&&x!==a).slice(0,3);
+  m.innerHTML=`<div class="crumb"><a data-home>Home</a> › <a data-cat="${a.c}">${a.c}</a> › ${a.n}</div><div class="det"><div><div class="pan"><div class="dh">${ic(a,1)}<div><h1>${a.n}</h1><div class="sub" style="margin:4px 0 12px">${a.c} · ${lb(a)}</div>${dl(a,'style="padding:13px 28px;font-size:16px"')}<div class="sub" style="margin-top:8px">Opens the official website</div></div></div></div>
+  <div class="pan" style="margin-top:16px"><h2>About ${a.n}</h2><p style="margin:0;color:var(--mute)">${a.d}. Softera links straight to the official website, so you always get the file from its publisher.</p></div></div>
+  <div class="pan"><h2>Technical details</h2><dl><dt>License</dt><dd>${a.lic}</dd><dt>Platforms</dt><dd>${a.os.join(", ")}</dd><dt>Category</dt><dd>${a.c}</dd><dt>Official site</dt><dd>${a.u.split("/")[0].replace("www.","")}</dd></dl></div></div>
+  ${sim.length?`<section class="sec"><div class="sh"><h2>Similar software</h2></div><div class="grid">${sim.map(card).join("")}</div></section>`:""}`;return}
+ const l=pool();
+ if(S.q||S.cat){m.innerHTML=`<section class="sec"><div class="sh"><h2>${S.q?`Results for “${S.q}”`:S.cat}</h2><span>${l.length} programs</span></div>${l.length?`<div class="grid">${l.map(card).join("")}</div>`:`<div class="empty">Nothing found. Try a shorter name or choose another platform.</div>`}</section>`;return}
+ m.innerHTML=`<section class="sec"><div class="sh"><h2>Browse categories</h2></div><div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr))">${cats.map(c=>{const x=A.filter(a=>a.c===c);return`<button class="cat" data-cat="${c}"><span><b>${c}</b><small>${x.length} programs</small></span><span class="mi">${x.slice(0,3).map(a=>ic(a)).join("")}</span></button>`}).join("")}</div></section>
+ <section class="sec"><div class="sh"><h2>Top downloads</h2><span>${S.os==="All"?"All platforms":S.os}</span></div><div class="grid">${l.slice(0,12).map(card).join("")}</div></section>
+ <section class="sec"><div class="sh"><h2>All software</h2><span>${l.length} programs</span></div><div class="tb"><table><thead><tr><th>Software</th><th>Category</th><th>Platforms</th><th>License</th><th></th></tr></thead><tbody>${l.slice(0,S.n).map(a=>`<tr><td><div class="nm" data-app="${a.n}">${ic(a)}${a.n}</div></td><td>${a.c}</td><td>${a.os.join(", ")}</td><td>${lb(a)}</td><td style="text-align:right">${dl(a)}</td></tr>`).join("")}</tbody></table></div>${S.n<l.length?`<button class="more" data-more>Show more software</button>`:""}</section>`}
+document.addEventListener("click",e=>{const g=s=>e.target.closest(s);
+ if(!g("#sg")&&!g("#q"))$("sg").hidden=true;
+ if(g("[data-app]"))return go({app:g("[data-app]").dataset.app});
+ if(g("[data-cat]"))return go({cat:g("[data-cat]").dataset.cat});
+ if(g("[data-home]"))return go({});
+ if(g("[data-os]")){S.os=g("[data-os]").dataset.os;S.app="";S.n=20;render();return}
+ if(g("[data-q]"))return go({q:g("[data-q]").dataset.q});
+ if(g("[data-more]")){S.n+=40;render();return}
+ if(g("#sbtn"))go({q:$("q").value.trim()})});
+$("q").addEventListener("keydown",e=>{if(e.key==="Enter")go({q:$("q").value.trim()})});
+$("q").addEventListener("input",()=>{const v=$("q").value.trim().toLowerCase(),g=$("sg");if(!v){g.hidden=true;return}const m=A.filter(a=>a.n.toLowerCase().includes(v)).slice(0,6);g.innerHTML=m.map(a=>`<a data-app="${a.n}">${ic(a)}<span><b>${a.n}</b><small>${a.c}</small></span></a>`).join("");g.hidden=!m.length});
+$("th").addEventListener("click",()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"});
+render();
+</script>
+</body>
+</html>
